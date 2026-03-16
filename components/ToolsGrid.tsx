@@ -47,10 +47,10 @@ export default function ToolsGrid() {
 
   return (
     <section 
-      data-section-theme="light" 
-      className="w-full bg-white font-sans relative border-y border-black/10 py-16 md:py-24 overflow-hidden"
+      data-section-theme="dark" 
+      className="w-full bg-black font-sans relative border-y border-white/10 py-16 md:py-24 overflow-hidden"
     >
-      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px] relative md:border-x border-black/10">
+      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px] relative md:border-x border-white/10">
         <div className="px-4 md:px-0 md:pl-[60px] md:pr-[60px] relative z-10">
           
           {/* Header */}
@@ -58,10 +58,10 @@ export default function ToolsGrid() {
             <p className="text-primary text-[14px] tracking-[2px] font-bold uppercase mb-4">
               TECHNOLOGIES YOU WILL MASTER
             </p>
-            <h2 className="text-black text-[30px] md:text-[48px] leading-[1.1] font-bold max-w-4xl">
+            <h2 className="text-white text-[30px] md:text-[48px] leading-[1.1] font-bold max-w-4xl">
               Master the Tools Powering the Future of Technology
             </h2>
-            <p className="hidden md:block text-black/60 text-lg md:text-xl mt-6 max-w-3xl leading-relaxed">
+            <p className="hidden md:block text-white/60 text-lg md:text-xl mt-6 max-w-3xl leading-relaxed">
               At NIM Academy, you don't just learn theory. You work with the same tools used by professional developers, data analysts, and AI engineers in real-world projects.
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function ToolsGrid() {
                 return (
                   <motion.div
                     key={tool.id}
-                    className={`absolute w-full h-full rounded-2xl shadow-xl flex flex-col items-center justify-center p-8 border border-black/5 ${tool.bgColor}`}
+                    className={`absolute w-full h-full rounded-2xl shadow-xl flex flex-col items-center justify-center p-8 border border-white/5 ${tool.bgColor}`}
                     style={{
                       transformOrigin: "bottom center",
                       zIndex: isTopCard ? 10 : 9 - offset,
@@ -93,7 +93,7 @@ export default function ToolsGrid() {
                       rotate: offset % 2 === 0 ? offset * 2.5 : -offset * 2.5,
                       opacity: 1 
                     }}
-                    exit={{ x: info => (info > 0 ? 300 : -300), opacity: 0, transition: { duration: 0.2 } }}
+                    exit={{ x: 300, opacity: 0, transition: { duration: 0.2 } }}
                     drag={isTopCard ? "x" : false}
                     dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                     onDragEnd={isTopCard ? handleDragEnd : undefined}
@@ -133,16 +133,16 @@ export default function ToolsGrid() {
                 {TOOLS.slice(rowIndex * 5, (rowIndex + 1) * 5).map((tool) => (
                   <div 
                     key={tool.id} 
-                    className="relative h-[140px] bg-black/[0.02] hover:bg-black/5 transition-all duration-300 border border-black/10 hover:border-black/20 rounded-2xl overflow-hidden cursor-pointer flex flex-col items-center justify-center p-4 group"
+                    className="relative h-[140px] bg-white/[0.03] hover:bg-white/10 transition-all duration-300 border border-white/10 hover:border-white/20 rounded-2xl overflow-hidden cursor-pointer flex flex-col items-center justify-center p-4 group"
                   >
                     <div className="w-14 h-14 mb-2 group-hover:-translate-y-2 transition-transform duration-300 relative">
                       <img 
                         src={tool.logo} 
                         alt={tool.name}
-                        className={`object-contain w-full h-full ${tool.isDark ? 'group-hover:opacity-80' : ''}`}
+                        className={`object-contain w-full h-full ${tool.isDark ? 'invert grayscale brightness-200' : ''}`}
                       />
                     </div>
-                    <div className="text-black/60 font-medium text-sm transition-opacity duration-300 group-hover:opacity-0">
+                    <div className="text-white/60 font-medium text-sm transition-opacity duration-300 group-hover:opacity-0">
                       {tool.name}
                     </div>
                     
@@ -160,7 +160,7 @@ export default function ToolsGrid() {
             {/* Empty Spacer Row (Design Requirement) */}
             <div className="grid grid-cols-5 gap-6 h-[80px] opacity-20 mt-8">
               {[1, 2, 3, 4, 5].map((i) => (
-                <div key={`spacer-${i}`} className="bg-transparent border border-black/20 border-dashed rounded-2xl"></div>
+                <div key={`spacer-${i}`} className="bg-transparent border border-white/20 border-dashed rounded-2xl"></div>
               ))}
             </div>
             
