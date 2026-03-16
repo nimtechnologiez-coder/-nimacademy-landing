@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #B8EF43;
+  --color-secondary: #0299B6;
+  --color-background: #08090A;
+  --color-text-main: #FFFFFF;
+  
+  --radius-xl: 4px;
+  --radius-2xl: 8px;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui;
+}
+
+:root {
+  --background: #08090A;
+  --foreground: #FFFFFF;
+  --primary: #B8EF43;
+  --secondary: #0299B6;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-main antialiased selection:bg-primary/30 selection:text-secondary font-sans;
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-black/40 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+  
+  .glass-dark {
+    @apply bg-black/60 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#B8EF43] to-[#8BF15F];
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-[#B8EF43] to-[#8BF15F];
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:border-primary/50 hover:bg-white/5;
+  }
+
+  .btn-glow {
+    @apply relative after:absolute after:inset-0 after:rounded-full after:bg-primary/20 after:blur-xl after:opacity-0 hover:after:opacity-100 transition-all;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at top left, rgba(167, 223, 88, 0.15), transparent 40%),
+              radial-gradient(circle at bottom right, rgba(2, 153, 182, 0.15), transparent 40%);
+}
