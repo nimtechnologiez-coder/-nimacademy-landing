@@ -16,6 +16,8 @@ export default function AdvancedPrograms() {
             </h2>
           </div>
 
+
+
           <div className="space-y-6 md:space-y-8">
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               {/* Course Card 1 */}
@@ -26,6 +28,13 @@ export default function AdvancedPrograms() {
                   width={1200} 
                   height={675} 
                   className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" 
+              <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(8, 9, 10, 0.2)", borderRadius: "2px" }}>
+                <img
+                  src="/images/images.jpg"
+                  alt="Full Stack Development Program"
+                  width={1200}
+                  height={675}
+                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-700" />
                 <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 text-white z-10">
@@ -51,6 +60,7 @@ export default function AdvancedPrograms() {
               </div>
 
               {/* Course Card 2 */}
+
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
                 <img 
                   src="/images/prog_ai_ml.png" 
@@ -58,6 +68,13 @@ export default function AdvancedPrograms() {
                   width={1200} 
                   height={675} 
                   className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" 
+              <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(8, 9, 10, 0.2)", borderRadius: "2px" }}>
+                <img
+                  src="/images/how-artificial-intelligence-is-shaping-data-analytics.jpg"
+                  alt="Artificial Intelligence & Data Analytics"
+                  width={1200}
+                  height={675}
+                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-700" />
                 <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 text-white z-10">
@@ -89,6 +106,10 @@ export default function AdvancedPrograms() {
                 <img src="/images/hero3.png" alt="Not Sure Which Program to Choose?" className="hidden md:block w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" />
                 <img src="/images/hero2.png" alt="Not Sure Which Program to Choose?" width={768} height={512} className="block md:hidden w-full h-auto object-cover opacity-50" />
                 
+              <div className="course-card relative w-full overflow-hidden md:h-[250px] bg-black group cursor-pointer" style={{ border: "1px solid rgba(8, 9, 10, 0.2)", borderRadius: "2px" }}>
+                <img src="/images/images (1).jpg" alt="Not Sure Which Program to Choose?" className="hidden md:block w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" />
+                <img src="/images/images (1).jpg" alt="Not Sure Which Program to Choose?" width={768} height={512} className="block md:hidden w-full h-auto object-cover opacity-50" />
+
                 <div className="absolute inset-0 md:inset-y-0 md:left-auto md:right-0 md:w-1/2 flex flex-col justify-end md:justify-center px-4 md:px-12 pb-4 md:pb-4 z-10">
                   <h3 className="text-white text-xl md:text-3xl font-bold mb-2 md:mb-3">Not Sure Which Program to Choose?</h3>
                   <p className="text-white/80 text-sm md:text-base mb-4 md:mb-6">
