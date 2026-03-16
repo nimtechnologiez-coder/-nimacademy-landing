@@ -34,26 +34,26 @@ export default function FAQ() {
   };
 
   return (
-    <div data-section-theme="light" className="w-full font-sans bg-white" id="faq" style={{ borderTop: "1px solid rgba(8, 9, 10, 0.2)", borderBottom: "1px solid rgba(8, 9, 10, 0.2)" }}>
-      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px]" style={{ borderLeft: "1px solid rgba(8, 9, 10, 0.2)", borderRight: "1px solid rgba(8, 9, 10, 0.2)" }}>
+    <div data-section-theme="dark" className="w-full font-sans bg-black" id="faq" style={{ borderTop: "1px solid rgba(255, 255, 255, 0.1)", borderBottom: "1px solid rgba(255, 255, 255, 0.1)" }}>
+      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px]" style={{ borderLeft: "1px solid rgba(255, 255, 255, 0.1)", borderRight: "1px solid rgba(255, 255, 255, 0.1)" }}>
         <div className="px-4 md:pl-[60px] md:pr-[60px] py-16 md:py-24">
           <div className="flex flex-col md:flex-row gap-12">
             <div className="md:w-[35%]">
-              <p className="text-black uppercase tracking-[1.75px] mb-4 text-[14px]">FREQUENTLY ASKED QUESTIONS</p>
-              <h2 className="text-black text-[30px] md:text-[38px] font-medium leading-[120%] pr-4">Everything You Need to Know About NIM Academy</h2>
+              <p className="text-primary uppercase tracking-[1.75px] mb-4 text-[14px] font-bold">FREQUENTLY ASKED QUESTIONS</p>
+              <h2 className="text-white text-[30px] md:text-[38px] font-bold leading-[120%] pr-4 uppercase tracking-tighter">Everything You Need to Know About <span className="text-primary italic">NIM Academy</span></h2>
             </div>
             <div className="md:w-[65%] space-y-4">
               {FAQS.map((faq, idx) => {
                 const isOpen = openIndex === idx;
                 return (
-                  <div key={idx} className="border border-[#08090A4D] bg-[#dcdcdc] rounded-[2px] overflow-hidden">
+                  <div key={idx} className="border border-white/10 bg-white/[0.03] rounded-[2px] overflow-hidden group hover:border-white/20 transition-colors">
                     <button
                       onClick={() => toggleFAQ(idx)}
-                      className="w-full flex justify-between items-center p-6 py-5 text-left font-medium text-[16px] md:text-[18px] transition-colors hover:bg-black/5"
+                      className="w-full flex justify-between items-center p-6 py-5 text-left font-bold text-[16px] md:text-[18px] transition-colors hover:bg-white/[0.02] text-white"
                     >
                       <span className="pr-8">{faq.question}</span>
                       <span
-                        className="text-2xl transition-transform duration-300 flex-shrink-0 font-light"
+                        className="text-2xl transition-transform duration-300 flex-shrink-0 font-light text-primary"
                         style={{ transform: isOpen ? "rotate(45deg)" : "rotate(0deg)" }}
                       >
                         +
@@ -67,7 +67,7 @@ export default function FAQ() {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3, ease: "easeInOut" }}
                         >
-                          <div className="p-6 pt-0 text-black/70 text-base md:text-lg leading-relaxed">
+                          <div className="p-6 pt-0 text-white/60 text-base md:text-lg leading-relaxed">
                             {faq.answer}
                           </div>
                         </motion.div>
@@ -79,7 +79,7 @@ export default function FAQ() {
             </div>
           </div>
           <div className="flex justify-center mt-12 md:mt-16">
-            <button className="px-8 py-4 bg-black text-white rounded-[2px] font-medium hover:bg-black/80 transition-colors">
+            <button className="px-10 py-5 bg-primary text-black font-bold uppercase tracking-wider rounded-[2px] transition-all hover:bg-lime-300 hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(184,239,67,0.2)]">
               Load More
             </button>
           </div>
