@@ -10,13 +10,14 @@ export default function HeroSection() {
     <section className="relative min-h-[720px] md:min-h-screen flex items-center overflow-hidden bg-black font-sans pt-20">
       {/* Background Grid/Image */}
       <div className="absolute inset-0 opacity-40">
+        <div className="absolute inset-0 bg-[url('/images/hero2.png')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-[#08090A]" />
         {/* Decorative background visual - simulating Outskill's background */}
         <div className="absolute inset-0 hero-gradient" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center border-l border-r border-white/20 min-h-[600px] md:min-h-[80vh]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px] md:min-h-[80vh]">
           {/* Left Side Content */}
           <div className="md:pl-12 px-4 py-12">
             <motion.div
@@ -26,7 +27,7 @@ export default function HeroSection() {
               className="space-y-6"
             >
               <h1 className="text-4xl md:text-6xl font-medium text-white leading-[1.1] max-w-xl">
-                Transform Your Career with <span className="text-primary">AI in One Weekend</span>
+                Learn modern technologies through <span className="text-primary">practical training, real-world projects,</span> and expert mentorship.
               </h1>
               <p className="text-lg md:text-xl text-white/60 max-w-md leading-relaxed">
                 Master AI in one weekend and become the go-to expert for AI solutions in your field.
