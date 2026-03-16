@@ -21,7 +21,7 @@ export default function AdvancedPrograms() {
               {/* Course Card 1 */}
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
                 <img 
-                  src="/home/ncourse1.webp" 
+                  src="/images/prog_full_stack.png" 
                   alt="Full Stack Development Program" 
                   width={1200} 
                   height={675} 
@@ -53,7 +53,7 @@ export default function AdvancedPrograms() {
               {/* Course Card 2 */}
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
                 <img 
-                  src="/home/ncourse2.webp" 
+                  src="/images/prog_ai_ml.png" 
                   alt="Artificial Intelligence & Data Analytics" 
                   width={1200} 
                   height={675} 
@@ -86,8 +86,8 @@ export default function AdvancedPrograms() {
             {/* Quiz Banner Card */}
             <div>
               <div className="course-card relative w-full overflow-hidden md:h-[250px] bg-black group cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
-                <img src="/home/ntest.webp" alt="Not Sure Which Program to Choose?" className="hidden md:block w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" />
-                <img src="/home/newcm.webp" alt="Not Sure Which Program to Choose?" width={768} height={512} className="block md:hidden w-full h-auto object-cover opacity-50" />
+                <img src="/images/hero3.png" alt="Not Sure Which Program to Choose?" className="hidden md:block w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" />
+                <img src="/images/hero2.png" alt="Not Sure Which Program to Choose?" width={768} height={512} className="block md:hidden w-full h-auto object-cover opacity-50" />
                 
                 <div className="absolute inset-0 md:inset-y-0 md:left-auto md:right-0 md:w-1/2 flex flex-col justify-end md:justify-center px-4 md:px-12 pb-4 md:pb-4 z-10">
                   <h3 className="text-white text-xl md:text-3xl font-bold mb-2 md:mb-3">Not Sure Which Program to Choose?</h3>

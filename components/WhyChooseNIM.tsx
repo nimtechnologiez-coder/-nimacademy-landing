@@ -29,7 +29,9 @@ const benefits = [
 
 export default function WhyChooseNIM() {
   return (
-    <section className="bg-[#08090A] py-24 border-y border-white/5">
+    <section className="nim-why-choose bg-black py-24 border-y border-white/5 relative overflow-hidden">
+      {/* Background Accent */}
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div>

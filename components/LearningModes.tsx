@@ -6,7 +6,7 @@ import { Monitor, Laptop, Globe, Users, BookOpen, MessageSquare } from "lucide-r
 
 export default function LearningModes() {
   return (
-    <section className="bg-black py-24 overflow-hidden">
+    <section className="nim-learning-modes bg-black py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center mb-20">
           <h2 className="text-white/40 text-sm uppercase tracking-widest mb-4 font-bold">Accessibility</h2>

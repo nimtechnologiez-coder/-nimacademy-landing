@@ -54,7 +54,7 @@ export default function ProgramSkills() {
       `}</style>
 
       <div className="w-[90%] md:w-auto mx-auto md:mx-[153px] border-x border-white/20">
-        <div className="px-4 md:px-0 md:pl-[60px] md:pr-[60px] py-20">
+        <div className="px-4 md:px-0 md:pl-[60px] md:pr-[60px] pt-8 pb-20">
           <div className="mb-14">
             <p className="text-primary text-[14px] tracking-[2px] leading-[160%] font-bold uppercase mb-4">
               OUR PROGRAMS

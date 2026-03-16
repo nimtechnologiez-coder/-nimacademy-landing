@@ -1,4 +1,4 @@
-import HeroSection from "@/components/HeroSection";
+import Hero from "@/components/Hero";
 import ProgramSkills from "@/components/ProgramSkills";
 import Schedule from "@/components/Schedule";
 import WhoIsItFor from "@/components/WhoIsItFor";
@@ -15,10 +15,8 @@ import LearningModes from "@/components/LearningModes";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-black font-sans selection:bg-primary/30 selection:text-text-main">
-      <HeroSection />
-      <Prepare2026 />
+      <Hero />
       <ProgramSkills />
-      <LearningModes />
       <Schedule />
       <WhoIsItFor />
       <ToolsGrid />
@@ -27,7 +25,6 @@ export default function Home() {
       <AdvancedPrograms />
       <BusinessSection />
       <FAQ />
-      <FinalCTA />
     </div>
   );
 }

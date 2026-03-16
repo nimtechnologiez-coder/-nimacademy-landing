@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function CourseHero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-[#08090A]">
+    <section className="nim-course-hero relative min-h-[90vh] flex items-center pt-32 pb-20 overflow-hidden bg-[#08090A]">
       {/* Background Decor */}
       <div className="absolute inset-0 z-0">
         {/* Main Background Image - Brain Visual */}
