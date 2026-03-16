@@ -12,7 +12,7 @@ const badges = [
 
 export default function FinalCTA() {
   return (
-    <section className="w-full bg-[#08090A] border-t border-white/5 relative overflow-hidden">
+    <section className="nim-final-cta w-full bg-[#08090A] border-t border-white/5 relative overflow-hidden">
       {/* Glow strips */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />

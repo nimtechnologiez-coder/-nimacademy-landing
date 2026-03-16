@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Courses", href: "/courses" },
-  { name: "NIM Connect", href: "#nim-connect" },
+  { name: "NIM Connect", href: "/connect" },
   { name: "Internship", href: "#internship" },
   { name: "Gallery", href: "#gallery" },
   { name: "Blog", href: "#blog" },

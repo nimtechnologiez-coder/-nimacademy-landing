@@ -114,7 +114,7 @@ const courseCategories = [
 
 export default function CoursePrograms() {
   return (
-    <section id="courses-list" className="bg-black py-24">
+    <section id="courses-list" className="nim-course-programs bg-black pt-24 pb-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-20">
           <h2 className="text-white/40 text-sm uppercase tracking-widest mb-4 font-bold border-l-2 border-primary pl-4">Our Curriculum</h2>

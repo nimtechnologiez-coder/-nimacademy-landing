@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[720px] md:min-h-screen flex items-center overflow-hidden bg-black font-sans pt-20">
+    <section className="relative min-h-[700px] md:min-h-[80vh] flex items-center overflow-hidden bg-black font-sans py-12">
       {/* Background Grid/Image */}
       <div className="absolute inset-0 opacity-40">
         <div className="absolute inset-0 bg-[url('/images/hero2.png')] bg-cover bg-center opacity-20" />
