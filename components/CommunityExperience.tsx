@@ -117,11 +117,11 @@ export default function CommunityExperience() {
             { name: "Suresh Iyer", role: "Software Engineer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2ea3f1b28845d0e57/thumbnail-1-0.png?v=1770984218782", url: "https://www.instagram.com/reel/DRKTdZ8DfDd/?igsh=MWhlazllY2gwZWF0ag==" },
             { name: "Pooja Mehta", role: "AI Developer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2ea3f1b28845d0e5a/thumbnail-1-0.png?v=1770984507743", url: "https://www.instagram.com/reel/DRFDlvRDaR8/?igsh=MWVkMXB4NDhxc3Fiaw==" },
           ].map((testimonial, idx) => (
-            <a 
-              href={testimonial.url} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              key={idx} 
+            <a
+              href={testimonial.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={idx}
               className="w-[200px] md:w-[240px] h-[340px] md:h-[404px] flex-shrink-0 cursor-pointer rounded-[2px] overflow-hidden border border-[#D9D9D9]/40 relative group block"
             >
               <video
@@ -226,36 +226,46 @@ export default function CommunityExperience() {
                       The user provided 6 repeating blocks of 3 columns of images.
                       We will map through a pattern to recreate the visual masonry. */}
 
-                  {[1, 2, 3, 4, 5, 6].map((set, setIdx) => (
+                  {/* Array of actual local images for variety */}
+                  {[
+                    // Set 1
+                    { col1: ['IMG_1412.JPG.jpeg', 'IMG_1414.JPG.jpeg'], col2: ['IMG_1415.JPG.jpeg', 'IMG_1470.JPG.jpeg'], col3: ['IMG_1949.JPG.jpeg', 'IMG_1976.JPG.jpeg'] },
+                    // Set 2
+                    { col1: ['IMG_2269.JPG.jpeg', 'IMG_3199.JPG.jpeg'], col2: ['IMG_3201.JPG.jpeg', 'IMG_3860.JPG.jpeg'], col3: ['IMG_4074.JPG.jpeg', 'IMG_4079.JPG.jpeg'] },
+                    // Set 3
+                    { col1: ['IMG_4597.JPG.jpeg', 'IMG_4740.JPG.jpeg'], col2: ['IMG_4984.JPG.jpeg', 'IMG_5002.JPG.jpeg'], col3: ['IMG_5195.JPG.jpeg', 'IMG_5200.JPG.jpeg'] },
+                    // Set 4
+                    { col1: ['IMG_5316.JPG.jpeg', 'IMG_5344.JPG.jpeg'], col2: ['IMG_5347.JPG.jpeg', 'IMG_5825.JPG.jpeg'], col3: ['IMG_5828.JPG.jpeg', 'IMG_5829.JPG.jpeg'] },
+                  ].map((set, setIdx) => (
                     <div key={setIdx} className="flex gap-3 md:gap-6">
 
                       {/* Column 1: Tall then Short */}
                       <div className="flex flex-col gap-3 md:gap-6 w-[160px] md:w-[260px] flex-shrink-0">
                         <div className="h-[240px] md:h-[400px]">
-                          <img src={`/images/${setIdx % 2 === 0 ? 'hero1' : 'hero3'}.png`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                          <img src={`/images/${set.col1[0]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
                         </div>
                         <div className="h-[110px] md:h-[180px]">
-                          <img src={`/images/${setIdx % 2 === 0 ? 'hero2' : 'hero4'}.png`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                          <img src={`/images/${set.col1[1]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
                         </div>
                       </div>
 
                       {/* Column 2: Short then Tall */}
                       <div className="flex flex-col gap-3 md:gap-6 w-[160px] md:w-[260px] flex-shrink-0">
                         <div className="h-[110px] md:h-[180px]">
-                          <img src={`/images/hero5.png`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                          <img src={`/images/${set.col2[0]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
                         </div>
                         <div className="h-[240px] md:h-[400px]">
-                          <img src={`/images/hero2.png`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                          <img src={`/images/${set.col2[1]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
                         </div>
                       </div>
 
                       {/* Column 3: Wide Tall then Short */}
                       <div className="flex flex-col gap-3 md:gap-6 w-[200px] md:w-[380px] flex-shrink-0">
                         <div className="h-[240px] md:h-[400px]">
-                          <img src={`/images/hero4.png`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                          <img src={`/images/${set.col3[0]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
                         </div>
                         <div className="h-[110px] md:h-[180px]">
-                          <img src={`/images/hero1.png`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                          <img src={`/images/${set.col3[1]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
                         </div>
                       </div>
 
