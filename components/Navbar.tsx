@@ -10,7 +10,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Courses", href: "/courses" },
   { name: "NIM Connect", href: "/connect" },
-  { name: "Internship", href: "#internship" },
+  { name: "Internship", href: "/internship" },
   { name: "Gallery", href: "#gallery" },
   { name: "Blog", href: "#blog" },
   { name: "Contact", href: "#contact" },
