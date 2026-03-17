@@ -22,18 +22,7 @@ export default function AdvancedPrograms() {
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               {/* Course Card 1 */}
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
-<<<<<<< HEAD
-=======
 
-                <img 
-                  src="/images/prog_full_stack.png" 
-                  alt="Full Stack Development Program" 
-                  width={1200} 
-                  height={675} 
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" 
-              <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(8, 9, 10, 0.2)", borderRadius: "2px" }}>
-
->>>>>>> 768226ed70a1dc67c22411f3ad8d5cf66e732819
                 <img
                   src="/images/images.jpg"
                   alt="Full Stack Development Program"
@@ -66,19 +55,7 @@ export default function AdvancedPrograms() {
 
               {/* Course Card 2 */}
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
-<<<<<<< HEAD
-=======
 
-                <img 
-                  src="/images/prog_ai_ml.png" 
-                  alt="Artificial Intelligence & Data Analytics" 
-                  width={1200} 
-                  height={675} 
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" 
-              <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(8, 9, 10, 0.2)", borderRadius: "2px" }}>
-
-
->>>>>>> 768226ed70a1dc67c22411f3ad8d5cf66e732819
                 <img
                   src="/images/how-artificial-intelligence-is-shaping-data-analytics.jpg"
                   alt="Artificial Intelligence & Data Analytics"
@@ -113,15 +90,7 @@ export default function AdvancedPrograms() {
             {/* Quiz Banner Card */}
             <div>
               <div className="course-card relative w-full overflow-hidden md:h-[250px] bg-black group cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
-<<<<<<< HEAD
-=======
 
-                <img src="/images/hero3.png" alt="Not Sure Which Program to Choose?" className="hidden md:block w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" />
-                <img src="/images/hero2.png" alt="Not Sure Which Program to Choose?" width={768} height={512} className="block md:hidden w-full h-auto object-cover opacity-50" />
-                
-              <div className="course-card relative w-full overflow-hidden md:h-[250px] bg-black group cursor-pointer" style={{ border: "1px solid rgba(8, 9, 10, 0.2)", borderRadius: "2px" }}>
-
->>>>>>> 768226ed70a1dc67c22411f3ad8d5cf66e732819
                 <img src="/images/images (1).jpg" alt="Not Sure Which Program to Choose?" className="hidden md:block w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" />
                 <img src="/images/images (1).jpg" alt="Not Sure Which Program to Choose?" width={768} height={512} className="block md:hidden w-full h-auto object-cover opacity-50" />
 
