@@ -4,14 +4,14 @@ import React from "react";
 
 export default function AdvancedPrograms() {
   return (
-    <section data-section-theme="dark" className="w-full font-sans bg-black" style={{ borderTop: "1px solid rgba(255, 255, 255, 0.1)", borderBottom: "1px solid rgba(255, 255, 255, 0.1)" }}>
-      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px]" style={{ borderLeft: "1px solid rgba(255, 255, 255, 0.1)", borderRight: "1px solid rgba(255, 255, 255, 0.1)" }}>
+    <section data-section-theme="light" className="w-full font-sans bg-[#FAF9F6]" style={{ borderTop: "1px solid rgba(0, 0, 0, 0.1)", borderBottom: "1px solid rgba(0, 0, 0, 0.1)" }}>
+      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px]" style={{ borderLeft: "1px solid rgba(0, 0, 0, 0.1)", borderRight: "1px solid rgba(0, 0, 0, 0.1)" }}>
         <div className="px-4 md:px-0 md:pl-[60px] md:pr-[60px] py-8 md:py-16">
           <div className="mb-8 md:mb-12">
             <p className="text-primary text-xs md:text-[16px] tracking-[1.75px] leading-[160%] font-bold uppercase mb-2 md:mb-4">
               EXPLORE OUR PROGRAMS
             </p>
-            <h2 className="text-white text-[24px] md:text-[38px] leading-[120%] font-bold uppercase tracking-tighter">
+            <h2 className="text-black text-[24px] md:text-[38px] leading-[120%] font-bold uppercase tracking-tighter">
               Choose the Right <span className="text-primary italic">Program</span> to Start Your Tech Career
             </h2>
           </div>
@@ -21,8 +21,11 @@ export default function AdvancedPrograms() {
           <div className="space-y-6 md:space-y-8">
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               {/* Course Card 1 */}
+
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
 
+
+              <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(0, 0, 0, 0.1)", borderRadius: "2px" }}>
                 <img
                   src="/images/images.jpg"
                   alt="Full Stack Development Program"
@@ -56,6 +59,8 @@ export default function AdvancedPrograms() {
               {/* Course Card 2 */}
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
 
+
+              <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(0, 0, 0, 0.1)", borderRadius: "2px" }}>
                 <img
                   src="/images/how-artificial-intelligence-is-shaping-data-analytics.jpg"
                   alt="Artificial Intelligence & Data Analytics"
@@ -91,6 +96,7 @@ export default function AdvancedPrograms() {
             <div>
               <div className="course-card relative w-full overflow-hidden md:h-[250px] bg-black group cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
 
+              <div className="course-card relative w-full overflow-hidden md:h-[250px] bg-black group cursor-pointer" style={{ border: "1px solid rgba(0, 0, 0, 0.1)", borderRadius: "2px" }}>
                 <img src="/images/images (1).jpg" alt="Not Sure Which Program to Choose?" className="hidden md:block w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" />
                 <img src="/images/images (1).jpg" alt="Not Sure Which Program to Choose?" width={768} height={512} className="block md:hidden w-full h-auto object-cover opacity-50" />
 

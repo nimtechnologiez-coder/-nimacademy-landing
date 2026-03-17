@@ -54,7 +54,7 @@ export default function Footer() {
                     <Link href="#ai" className="block text-gray-400 hover:text-white transition-colors text-sm">Artificial Intelligence</Link>
                     <Link href="#data-analytics" className="block text-gray-400 hover:text-white transition-colors text-sm">Data Analytics</Link>
                     <Link href="#digital-marketing" className="block text-gray-400 hover:text-white transition-colors text-sm">Digital Marketing</Link>
-                    <Link href="#internship" className="block text-gray-400 hover:text-white transition-colors text-sm">Internship Program</Link>
+                    <Link href="/internship" className="block text-gray-400 hover:text-white transition-colors text-sm">Internship Program</Link>
                   </div>
                 </div>
                 <div>
@@ -155,7 +155,7 @@ export default function Footer() {
                       <Link href="#ai" className="block text-gray-400 hover:text-white transition-colors text-sm">Artificial Intelligence</Link>
                       <Link href="#data-analytics" className="block text-gray-400 hover:text-white transition-colors text-sm">Data Analytics</Link>
                       <Link href="#digital-marketing" className="block text-gray-400 hover:text-white transition-colors text-sm">Digital Marketing</Link>
-                      <Link href="#internship" className="block text-gray-400 hover:text-white transition-colors text-sm">Internship Program</Link>
+                      <Link href="/internship" className="block text-gray-400 hover:text-white transition-colors text-sm">Internship Program</Link>
                     </div>
                   </div>
                   <div>

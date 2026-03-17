@@ -39,7 +39,7 @@ const skills = [
 
 export default function ProgramSkills() {
   return (
-    <section className="w-full bg-[#08090A] font-sans border-y border-white/20">
+    <section className="w-full bg-[#FAF9F6] font-sans border-y border-black/10">
       <style jsx>{`
         @media (max-width: 767px) {
           .skill-card {
@@ -53,16 +53,16 @@ export default function ProgramSkills() {
         }
       `}</style>
 
-      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px] border-x border-white/20">
+      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px] border-x border-black/10">
         <div className="px-4 md:px-0 md:pl-[60px] md:pr-[60px] pt-8 pb-20">
           <div className="mb-14">
             <p className="text-primary text-[14px] tracking-[2px] leading-[160%] font-bold uppercase mb-4">
               OUR PROGRAMS
             </p>
-            <h2 className="text-white text-[32px] md:text-[48px] leading-[1.1] font-bold max-w-4xl">
+            <h2 className="text-black text-[32px] md:text-[48px] leading-[1.1] font-bold max-w-4xl">
               Programs Designed for the Future of Technology
             </h2>
-            <p className="text-white/50 text-base md:text-xl mt-6 max-w-3xl leading-relaxed">
+            <p className="text-black/50 text-base md:text-xl mt-6 max-w-3xl leading-relaxed">
               Learn cutting-edge technologies with hands-on training, real industry projects, and expert mentorship designed to launch your career in the modern tech ecosystem.
             </p>
           </div>
