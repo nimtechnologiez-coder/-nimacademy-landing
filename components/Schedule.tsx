@@ -134,16 +134,16 @@ export default function Schedule() {
   };
 
   return (
-    <section id="curriculum" className="w-full bg-[#08090A] font-sans border-y border-white/10">
-      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px] border-x border-white/10">
-        <div className="z-10 bg-[#08090A] px-4 md:px-0 md:pl-[60px] pt-14 pb-8 border-b border-white/10">
+    <section id="curriculum" className="w-full bg-[#FAF9F6] font-sans border-y border-black/10">
+      <div className="w-[90%] md:w-auto mx-auto md:mx-[153px] border-x border-black/10">
+        <div className="z-10 bg-[#FAF9F6] px-4 md:px-0 md:pl-[60px] pt-14 pb-8 border-b border-black/10">
           <p className="text-primary text-[14px] tracking-[2px] font-bold uppercase mb-4">
             LEARNING JOURNEY
           </p>
-          <h2 className="text-white text-[30px] md:text-[42px] leading-[1.1] font-bold">
+          <h2 className="text-black text-[30px] md:text-[42px] leading-[1.1] font-bold">
             Industry-Focused Curriculum That Builds Real Skills
           </h2>
-          <p className="text-white/60 text-base md:text-lg mt-4 max-w-3xl leading-relaxed">
+          <p className="text-black/60 text-base md:text-lg mt-4 max-w-3xl leading-relaxed">
             Our programs are designed to take you from fundamentals to advanced industry projects. Learn step-by-step with practical training, mentorship, and real-world applications.
           </p>
         </div>
@@ -159,8 +159,8 @@ export default function Schedule() {
                   className={cn(
                     "flex gap-4 transition-all duration-500 text-left group w-full relative py-2",
                     activeTab === index 
-                      ? "text-white translate-x-2" 
-                      : "text-white/20 hover:text-white/40"
+                      ? "text-black translate-x-2" 
+                      : "text-black/20 hover:text-black/40"
                   )}
                 >
                   {activeTab === index && (
@@ -182,7 +182,7 @@ export default function Schedule() {
           </div>
 
           {/* Content Sections */}
-          <div className="md:w-[65%] border-l border-white/10">
+          <div className="md:w-[65%] border-l border-black/10">
             <div className="p-0">
               {scheduleItems.map((item, index) => (
                 <div 
@@ -190,8 +190,8 @@ export default function Schedule() {
                   ref={(el) => { itemRefs.current[index] = el; }}
                   data-index={index}
                   className={cn(
-                    "curriculum-card border-b border-white/10 last:border-b-0 transition-all duration-700",
-                    activeTab === index ? "bg-white/[0.02]" : ""
+                    "curriculum-card border-b border-black/10 last:border-b-0 transition-all duration-700",
+                    activeTab === index ? "bg-black/[0.02]" : ""
                   )}
                 >
                   <div className="relative h-[240px] md:h-[320px] overflow-hidden group">
@@ -225,16 +225,16 @@ export default function Schedule() {
                       <div key={pIndex} className="flex items-start gap-4 group/point">
                         <div className={cn(
                           "mt-1.5 w-5 h-5 rounded-full border flex items-center justify-center flex-shrink-0 transition-all duration-500",
-                          activeTab === index ? "border-primary bg-primary/10" : "border-white/10"
+                          activeTab === index ? "border-primary bg-primary/10" : "border-black/10"
                         )}>
                           <div className={cn(
                             "w-1.5 h-1.5 rounded-full transition-all duration-500",
-                            activeTab === index ? "bg-primary" : "bg-white/10"
+                            activeTab === index ? "bg-primary" : "bg-black/10"
                           )} />
                         </div>
                         <p className={cn(
                           "text-sm md:text-base leading-relaxed transition-all duration-500",
-                          activeTab === index ? "text-white font-medium" : "text-white/50"
+                          activeTab === index ? "text-black font-medium" : "text-black/50"
                         )}>
                           {point}
                         </p>
