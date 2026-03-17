@@ -21,6 +21,10 @@ export default function AdvancedPrograms() {
           <div className="space-y-6 md:space-y-8">
             <div className="flex flex-col md:flex-row gap-4 md:gap-8">
               {/* Course Card 1 */}
+
+              <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
+
+
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(0, 0, 0, 0.1)", borderRadius: "2px" }}>
                 <img
                   src="/images/images.jpg"
@@ -53,6 +57,9 @@ export default function AdvancedPrograms() {
               </div>
 
               {/* Course Card 2 */}
+              <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
+
+
               <div className="course-card group relative w-full md:w-[50%] overflow-hidden cursor-pointer" style={{ border: "1px solid rgba(0, 0, 0, 0.1)", borderRadius: "2px" }}>
                 <img
                   src="/images/how-artificial-intelligence-is-shaping-data-analytics.jpg"
@@ -87,6 +94,8 @@ export default function AdvancedPrograms() {
 
             {/* Quiz Banner Card */}
             <div>
+              <div className="course-card relative w-full overflow-hidden md:h-[250px] bg-black group cursor-pointer" style={{ border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "2px" }}>
+
               <div className="course-card relative w-full overflow-hidden md:h-[250px] bg-black group cursor-pointer" style={{ border: "1px solid rgba(0, 0, 0, 0.1)", borderRadius: "2px" }}>
                 <img src="/images/images (1).jpg" alt="Not Sure Which Program to Choose?" className="hidden md:block w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" />
                 <img src="/images/images (1).jpg" alt="Not Sure Which Program to Choose?" width={768} height={512} className="block md:hidden w-full h-auto object-cover opacity-50" />

@@ -9,9 +9,9 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-[700px] md:min-h-[80vh] flex items-center overflow-hidden bg-black font-sans py-12">
       {/* Background Grid/Image */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute inset-0 bg-[url('/images/hero2.png')] bg-cover bg-center opacity-20" />
-        <div className="absolute inset-0 bg-[#08090A]" />
+      <div className="absolute inset-0 opacity-60">
+        <div className="absolute inset-0 bg-[url('/images/modern_hero_bg.png')] bg-cover bg-center opacity-40 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-[#08090A]" />
         {/* Decorative background visual - simulating Outskill's background */}
         <div className="absolute inset-0 hero-gradient" />
       </div>
@@ -79,10 +79,10 @@ export default function HeroSection() {
                className="relative h-full w-full"
              >
                 <Image
-                  src="/images/hero1.png"
+                  src="/images/modern_hero_visual.png"
                   alt="NIM Academy AI Mastery"
                   fill
-                  className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+                  className="object-cover object-center transition-all duration-700 hover:scale-105"
                 />
                 {/* Floating UI cards */}
                 <div className="absolute top-10 right-10 bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-xl shadow-2xl">

@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 export default function ConnectHero() {
   return (
-    <section className="relative min-h-[80vh] flex items-center pt-32 pb-20 overflow-hidden bg-[#08090A]">
+    <section className="relative h-screen flex items-center pt-20 pb-10 overflow-hidden bg-[#08090A]">
       <div className="absolute inset-0 z-0">
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-[60%] h-full opacity-40 pointer-events-none">
-          <div className="absolute inset-0 bg-[url('/images/hero3.png')] bg-cover bg-center grayscale" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#08090A] via-[#08090A]/60 to-transparent" />
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-full lg:w-[60%] h-full opacity-60 pointer-events-none">
+          <div className="absolute inset-0 bg-[url('/images/connect_hero_bg.png')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#08090A] via-[#08090A]/40 to-transparent" />
         </div>
         <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px]" />
       </div>
@@ -33,13 +33,13 @@ export default function ConnectHero() {
             </h1>
 
             <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed mb-12 font-light">
-              At NIM Academy, we believe true education happens when academia meets industry. 
-              We&apos;ve partnered with leading colleges and universities across South India to bridge the gap 
+              At NIM Academy, we believe true education happens when academia meets industry.
+              We&apos;ve partnered with leading colleges and universities across South India to bridge the gap
               between classroom learning and real-world skills.
             </p>
 
             <div className="flex flex-wrap gap-6">
-              <button 
+              <button
                 onClick={() => document.getElementById("partnership-details")?.scrollIntoView({ behavior: "smooth" })}
                 className="bg-primary text-black font-bold px-10 py-5 text-sm tracking-[0.1em] uppercase transition-all hover:bg-white active:scale-95"
               >
