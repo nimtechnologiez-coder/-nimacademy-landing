@@ -8,28 +8,28 @@ const contacts = [
   {
     icon: <Phone size={24} />,
     title: "Call Us",
-    info: "+91 97782 50570",
-    link: "tel:+919778250570",
+    info: "+91 74188 55108",
+    link: "tel:+917418855108",
     color: "#A7DF58"
   },
   {
     icon: <MessageCircle size={24} />,
     title: "WhatsApp",
     info: "Chat with Experts",
-    link: "https://wa.me/919778250570",
+    link: "https://wa.me/917418855108",
     color: "#25D366"
   },
   {
     icon: <Mail size={24} />,
     title: "Email Us",
-    info: "support@nimacademy.com",
-    link: "mailto:support@nimacademy.com",
+    info: "contactnimacademy@gmail.com",
+    link: "mailto:contactnimacademy@gmail.com",
     color: "#0299B6"
   },
   {
     icon: <MapPin size={24} />,
     title: "Visit Campus",
-    info: "Kozhikode, Kerala",
+    info: "Nagercoil, Tamil Nadu",
     link: "#map",
     color: "#FFFFFF"
   }

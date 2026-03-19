@@ -51,7 +51,7 @@ export default function ContactPage() {
 
       {/* STICKY WHATSAPP BUTTON */}
       <motion.a
-        href="https://wa.me/919778250570"
+        href="https://wa.me/917418855108"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
