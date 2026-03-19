@@ -11,9 +11,9 @@ const navLinks = [
   { name: "Courses", href: "/courses" },
   { name: "NIM Connect", href: "/connect" },
   { name: "Internship", href: "/internship" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Blog", href: "#blog" },
-  { name: "Contact", href: "#contact" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
