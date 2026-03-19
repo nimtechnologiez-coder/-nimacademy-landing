@@ -67,14 +67,14 @@ export default function ContactForm() {
             label="FULL NAME" 
             placeholder="John Doe" 
             value={formData.name}
-            onChange={(v) => setFormData({...formData, name: v})}
+            onChange={(v: string) => setFormData({...formData, name: v})}
           />
           <InputGroup 
             label="EMAIL ADDRESS" 
             type="email"
             placeholder="john@example.com" 
             value={formData.email}
-            onChange={(v) => setFormData({...formData, email: v})}
+            onChange={(v: string) => setFormData({...formData, email: v})}
           />
         </div>
 
@@ -83,7 +83,7 @@ export default function ContactForm() {
             label="PHONE NUMBER" 
             placeholder="+91 XXXXX XXXXX" 
             value={formData.phone}
-            onChange={(v) => setFormData({...formData, phone: v})}
+            onChange={(v: string) => setFormData({...formData, phone: v})}
           />
           <div className="space-y-3">
             <label className="text-[10px] font-black uppercase tracking-[0.3em] text-white/30">COURSE INTEREST</label>
@@ -128,7 +128,15 @@ export default function ContactForm() {
   );
 }
 
-function InputGroup({ label, placeholder, type = "text", value, onChange }: any) {
+interface InputGroupProps {
+  label: string;
+  placeholder: string;
+  type?: string;
+  value: string;
+  onChange: (v: string) => void;
+}
+
+function InputGroup({ label, placeholder, type = "text", value, onChange }: InputGroupProps) {
   return (
     <div className="space-y-3">
       <label className="text-[10px] font-black uppercase tracking-[0.3em] text-white/30">{label}</label>
