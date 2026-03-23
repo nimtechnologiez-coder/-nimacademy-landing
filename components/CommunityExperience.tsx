@@ -170,16 +170,26 @@ export default function CommunityExperience() {
                 className="relative block w-full overflow-hidden rounded-[2px] border border-white/30 group" 
                 style={{ border: "1px solid rgba(255, 255, 255, 0.2)" }}
               >
-                <div className="relative w-full aspect-video bg-black">
-                  <img
-                    src="https://d31bwppm8yl9g2.cloudfront.net/learner/outskill/videothumb.webp"
-                    alt="Video thumbnail"
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
-                    <div className="w-20 h-20 flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform duration-200">
-                      <img src="https://d31bwppm8yl9g2.cloudfront.net/learner/outskill/osvideo.svg" alt="video play icon" className="w-12 h-12" />
+                <div className="relative w-full grid grid-cols-1 md:grid-cols-2 bg-black">
+                  <div className="relative aspect-[4/3] md:aspect-video overflow-hidden">
+                    <img
+                      src="/images/mou_signing_1.jpg"
+                      alt="NIM Academy MOU Signing"
+                      className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="relative aspect-[4/3] md:aspect-video overflow-hidden border-t md:border-t-0 md:border-l border-white/10">
+                    <img
+                      src="/images/mou_signing_2.jpg"
+                      alt="NIM Academy MOU Partnership"
+                      className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-colors z-10">
+                    <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform duration-200">
+                      <img src="https://d31bwppm8yl9g2.cloudfront.net/learner/outskill/osvideo.svg" alt="video play icon" className="w-10 h-10 md:w-12 md:h-12 drop-shadow-2xl" />
                     </div>
                   </div>
                 </div>
