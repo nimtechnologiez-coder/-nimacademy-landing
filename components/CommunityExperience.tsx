@@ -56,7 +56,9 @@ export default function CommunityExperience() {
       <div className="w-[90%] md:w-auto mx-auto md:mx-[153px]" style={{ borderLeft: "1px solid rgba(255, 255, 255, 0.2)", borderRight: "1px solid rgba(255, 255, 255, 0.2)" }}>
         <div className="relative z-20 px-4 md:px-[60px] pt-12 md:pt-16 pb-6 md:pb-10">
           <p className="text-xs md:text-[16px] tracking-[1.75px] leading-[160%] font-normal uppercase text-white/70 mb-2 md:mb-3">
-            STUDENT SUCCESS STORIES
+
+
+
           </p>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-0 mb-6 md:mb-10">
             <div className="flex-1">
@@ -104,18 +106,13 @@ export default function CommunityExperience() {
           `}} />
 
           {[
-            { name: "Arjun Nair", role: "Full Stack Developer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/68a6c89319535c52efc46796/thumbnail-1-0.png?v=1758041021781", url: "https://www.instagram.com/reel/DSuq-zVkV5D/?igsh=MTl3cHlwODZlZGgweQ==" },
-            { name: "Priya Sharma", role: "Data Analyst", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/68a6c8e50a8c57042d4ec064/thumbnail-1-0.png?v=1758041056214", url: "https://www.instagram.com/reel/DP36idziA8C/?igsh=eHo2b3Rzajg0Yzln" },
-            { name: "Rahul Menon", role: "Software Engineer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/68a6c8e519535c52efc46b0a/thumbnail-1-0.png?v=1758041093155", url: "https://www.instagram.com/reel/DTvNovKERaF/?igsh=c3Vvcjh4bXhnYWsy" },
-            { name: "Aisha Khan", role: "AI Developer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2ea3f1b28845d0e7a/thumbnail-1-0.png?v=1770983866577", url: "https://www.instagram.com/reel/DTdDX4mjd9w/?igsh=MWdha2M3cDAzdGlqcA==" },
-            { name: "Vikram Patel", role: "Frontend Developer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2ea3f1b28845d0e70/thumbnail-1-0.png?v=1770984197301", url: "https://www.instagram.com/reel/DSka48GjZSq/?igsh=MW5waDk1OHRrZXAzZg==" },
-            { name: "Sneha Reddy", role: "Digital Marketing Specialist", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2010c771aa5146131/thumbnail-1-0.png?v=1770984309313", url: "https://www.instagram.com/reel/DSRgoLvkR0U/?igsh=MXVtanpoNGgwcGdtbw==" },
-            { name: "Karan Singh", role: "Backend Developer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2010c771aa514612f/thumbnail-1-0.png?v=1770984354912", url: "https://www.instagram.com/reel/DSNJbLRkRVD/?igsh=MTdvcG1pazJoMDdudQ==" },
-            { name: "Ananya Desai", role: "UI/UX Designer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f25b37057513b5fbe3/thumbnail-1-0.png?v=1770984387797", url: "https://www.instagram.com/reel/DR7Qb0kkYvP/?igsh=MWdxazJuYnczZHpmMw==" },
-            { name: "Ravi Kumar", role: "Full Stack Developer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f25b37057513b5fbcd/thumbnail-1-0.png?v=1770984418245", url: "https://www.instagram.com/reel/DR4r0ZHEYvu/?igsh=MWc0eTRuMnNmNHFleA==" },
-            { name: "Neha Gupta", role: "Data Analyst", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f25b37057513b5fbc9/thumbnail-1-0.png?v=1770984023495", url: "https://www.instagram.com/reel/DRZvZsFkVcM/?igsh=MW1scDk0bzEzMW91Nw==" },
-            { name: "Suresh Iyer", role: "Software Engineer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2ea3f1b28845d0e57/thumbnail-1-0.png?v=1770984218782", url: "https://www.instagram.com/reel/DRKTdZ8DfDd/?igsh=MWhlazllY2gwZWF0ag==" },
-            { name: "Pooja Mehta", role: "AI Developer", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2ea3f1b28845d0e5a/thumbnail-1-0.png?v=1770984507743", url: "https://www.instagram.com/reel/DRFDlvRDaR8/?igsh=MWVkMXB4NDhxc3Fiaw==" },
+            { name: "", role: "", poster: "/images/posters/poster_1.jpg", url: "https://www.instagram.com/reel/DP36idziA8C/?igsh=eHo2b3Rzajg0Yzln" },
+            { name: "Rahul Menon", role: "Software Engineer", poster: "/images/posters/poster_2.jpg", url: "https://www.instagram.com/reel/DTvNovKERaF/?igsh=c3Vvcjh4bXhnYWsy" },
+            { name: "Aisha Khan", role: "AI Developer", poster: "/images/posters/poster_3.jpg", url: "https://www.instagram.com/reel/DTdDX4mjd9w/?igsh=MWdha2M3cDAzdGlqcA==" },
+            { name: "Vikram Patel", role: "Frontend Developer", poster: "/images/posters/poster_4.jpg", url: "https://www.instagram.com/reel/DSka48GjZSq/?igsh=MW5waDk1OHRrZXAzZg==" },
+            { name: "Sneha Reddy", role: "Digital Marketing Specialist", poster: "/images/posters/poster_5.jpg", url: "https://www.instagram.com/reel/DSRgoLvkR0U/?igsh=MXVtanpoNGgwcGdtbw==" },
+            { name: "Karan Singh", role: "Backend Developer", poster: "/images/posters/poster_6.jpg", url: "https://www.instagram.com/reel/DSNJbLRkRVD/?igsh=MTdvcG1pazJoMDdudQ==" },
+            { name: "Ananya Desai", role: "UI/UX Designer", poster: "/images/posters/poster_7.jpg", url: "https://www.instagram.com/reel/DR7Qb0kkYvP/?igsh=MWdxazJuYnczZHpmMw==" },
           ].map((testimonial, idx) => (
             <a
               href={testimonial.url}
