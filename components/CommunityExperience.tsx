@@ -232,22 +232,49 @@ export default function CommunityExperience() {
                       The user provided 6 repeating blocks of 3 columns of images.
                       We will map through a pattern to recreate the visual masonry. */}
 
+                  {/* Array of actual local images for variety */}
                   {[
-                    'community_custom_5.jpg',
-                    'community_custom_4.jpg',
-                    'community_custom_3.jpg',
-                    'community_custom_2.jpg',
-                    'community_custom_1.jpg'
-                  ].map((imgSrc, idx) => (
-                    <div key={idx} className="w-[300px] md:w-[400px] flex-shrink-0">
-                      <div className="relative w-full h-[420px] md:h-[560px] rounded-[2px] border border-white/20 overflow-hidden bg-white/5 group shadow-lg">
-                        <img 
-                          src={`/images/${imgSrc}`} 
-                          alt={`NIM Academy Program Showcase ${idx + 1}`} 
-                          className="w-full h-full object-contain md:object-cover transition-transform duration-700 group-hover:scale-105" 
-                          loading="lazy" 
-                        />
+                    // Set 1
+                    { col1: ['community_posters.jpg', 'IMG_1414.JPG.jpeg'], col2: ['IMG_1415.JPG.jpeg', 'IMG_1470.JPG.jpeg'], col3: ['IMG_1949.JPG.jpeg', 'IMG_1976.JPG.jpeg'] },
+                    // Set 2
+                    { col1: ['IMG_2269.JPG.jpeg', 'IMG_3199.JPG.jpeg'], col2: ['IMG_3201.JPG.jpeg', 'IMG_3860.JPG.jpeg'], col3: ['IMG_4074.JPG.jpeg', 'IMG_4079.JPG.jpeg'] },
+                    // Set 3
+                    { col1: ['IMG_4597.JPG.jpeg', 'IMG_4740.JPG.jpeg'], col2: ['IMG_4984.JPG.jpeg', 'IMG_5002.JPG.jpeg'], col3: ['IMG_5195.JPG.jpeg', 'IMG_5200.JPG.jpeg'] },
+                    // Set 4
+                    { col1: ['IMG_5316.JPG.jpeg', 'IMG_5344.JPG.jpeg'], col2: ['IMG_5347.JPG.jpeg', 'IMG_5825.JPG.jpeg'], col3: ['IMG_5828.JPG.jpeg', 'IMG_5829.JPG.jpeg'] },
+                  ].map((set, setIdx) => (
+                    <div key={setIdx} className="flex gap-3 md:gap-6">
+
+                      {/* Column 1: Tall then Short */}
+                      <div className="flex flex-col gap-3 md:gap-6 w-[160px] md:w-[260px] flex-shrink-0">
+                        <div className="h-[240px] md:h-[400px]">
+                          <img src={`/images/${set.col1[0]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                        </div>
+                        <div className="h-[110px] md:h-[180px]">
+                          <img src={`/images/${set.col1[1]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                        </div>
                       </div>
+
+                      {/* Column 2: Short then Tall */}
+                      <div className="flex flex-col gap-3 md:gap-6 w-[160px] md:w-[260px] flex-shrink-0">
+                        <div className="h-[110px] md:h-[180px]">
+                          <img src={`/images/${set.col2[0]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                        </div>
+                        <div className="h-[240px] md:h-[400px]">
+                          <img src={`/images/${set.col2[1]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                        </div>
+                      </div>
+
+                      {/* Column 3: Wide Tall then Short */}
+                      <div className="flex flex-col gap-3 md:gap-6 w-[200px] md:w-[380px] flex-shrink-0">
+                        <div className="h-[240px] md:h-[400px]">
+                          <img src={`/images/${set.col3[0]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                        </div>
+                        <div className="h-[110px] md:h-[180px]">
+                          <img src={`/images/${set.col3[1]}`} alt="Community learning" className="w-full h-full object-cover rounded-[2px] border border-white/30" loading="lazy" />
+                        </div>
+                      </div>
+
                     </div>
                   ))}
 
