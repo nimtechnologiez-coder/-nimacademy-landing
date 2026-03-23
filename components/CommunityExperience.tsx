@@ -163,21 +163,27 @@ export default function CommunityExperience() {
                 </p>
               </div>
 
-              <div className="relative w-full overflow-hidden rounded-[2px] border border-white/30" style={{ border: "1px solid rgba(255, 255, 255, 0.2)" }}>
+              <a 
+                href="https://www.instagram.com/reel/DTA2NsJEbfx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block w-full overflow-hidden rounded-[2px] border border-white/30 group" 
+                style={{ border: "1px solid rgba(255, 255, 255, 0.2)" }}
+              >
                 <div className="relative w-full aspect-video bg-black">
                   <img
                     src="https://d31bwppm8yl9g2.cloudfront.net/learner/outskill/videothumb.webp"
                     alt="Video thumbnail"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                    <button className="w-20 h-20 flex items-center justify-center cursor-pointer hover:scale-110 transition-transform duration-200 focus:outline-none" aria-label="Play video">
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
+                    <div className="w-20 h-20 flex items-center justify-center cursor-pointer group-hover:scale-110 transition-transform duration-200">
                       <img src="https://d31bwppm8yl9g2.cloudfront.net/learner/outskill/osvideo.svg" alt="video play icon" className="w-12 h-12" />
-                    </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
