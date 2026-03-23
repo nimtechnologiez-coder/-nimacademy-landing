@@ -106,13 +106,16 @@ export default function CommunityExperience() {
           `}} />
 
           {[
-            { name: "", role: "", poster: "/images/posters/poster_1.jpg", url: "https://www.instagram.com/reel/DP36idziA8C/?igsh=eHo2b3Rzajg0Yzln" },
-            { name: "Rahul Menon", role: "Software Engineer", poster: "/images/posters/poster_2.jpg", url: "https://www.instagram.com/reel/DTvNovKERaF/?igsh=c3Vvcjh4bXhnYWsy" },
-            { name: "Aisha Khan", role: "AI Developer", poster: "/images/posters/poster_3.jpg", url: "https://www.instagram.com/reel/DTdDX4mjd9w/?igsh=MWdha2M3cDAzdGlqcA==" },
-            { name: "Vikram Patel", role: "Frontend Developer", poster: "/images/posters/poster_4.jpg", url: "https://www.instagram.com/reel/DSka48GjZSq/?igsh=MW5waDk1OHRrZXAzZg==" },
-            { name: "Sneha Reddy", role: "Digital Marketing Specialist", poster: "/images/posters/poster_5.jpg", url: "https://www.instagram.com/reel/DSRgoLvkR0U/?igsh=MXVtanpoNGgwcGdtbw==" },
-            { name: "Karan Singh", role: "Backend Developer", poster: "/images/posters/poster_6.jpg", url: "https://www.instagram.com/reel/DSNJbLRkRVD/?igsh=MTdvcG1pazJoMDdudQ==" },
-            { name: "Ananya Desai", role: "UI/UX Designer", poster: "/images/posters/poster_7.jpg", url: "https://www.instagram.com/reel/DR7Qb0kkYvP/?igsh=MWdxazJuYnczZHpmMw==" },
+            { name: "", role: "", poster: "/images/posters/poster_1.jpg", url: "https://www.instagram.com/reel/DSka48GjZSq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "/images/posters/poster_2.jpg", url: "https://www.instagram.com/reel/DSRgoLvkR0U/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "/images/posters/poster_3.jpg", url: "https://www.instagram.com/reel/DSNJbLRkRVD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "/images/posters/poster_4.jpg", url: "https://www.instagram.com/reel/DR7Qb0kkYvP/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "/images/posters/poster_5.jpg", url: "https://www.instagram.com/reel/DR4r0ZHEYvu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "/images/posters/poster_6.jpg", url: "https://www.instagram.com/reel/DRuVVCCkf2G/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "/images/posters/poster_7.jpg", url: "https://www.instagram.com/reel/DRSC1AkkUGv/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f25b37057513b5fbc9/thumbnail-1-0.png?v=1770984023495", url: "https://www.instagram.com/reel/DRZvZsFkVcM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/698f10f2ea3f1b28845d0e57/thumbnail-1-0.png?v=1770984218782", url: "https://www.instagram.com/reel/DRKTdZ8DfDd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+            { name: "", role: "", poster: "https://video.gumlet.io/625c467afd368ceff39e7175/68a6c8e50a8c57042d4ec064/thumbnail-1-0.png?v=1758041056214", url: "https://www.instagram.com/reel/DP36idziA8C/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
           ].map((testimonial, idx) => (
             <a
               href={testimonial.url}
